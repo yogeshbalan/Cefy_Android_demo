@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.yogeshbalan.cefy.CardViewActivity"
+    tools:showIn="@layout/activity_card_view">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="left"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text="Your Cards"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+            <com.vinaygaba.creditcardview.CreditCardView
+                android:id="@+id/card1"
+                android:layout_width="fill_parent"
+                android:layout_height="225dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cardbackground_world"
+                app:cardName="Yogesh Balan"
+                app:cardNameTextColor="#cccccc"
+                app:cardNumber="5500005555555559"
+                app:cardNumberFormat="masked_all_but_last_four"
+                app:cardNumberTextColor="#cccccc"
+                app:expiryDate="02/22"
+                app:expiryDateTextColor="#cccccc"
+                app:hintTextColor="#cccccc"
+                app:isEditable="true"
+                app:putChip="true"
+                app:type="auto"
+                app:validTillTextColor="#cccccc" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/phone_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/big_margin"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:gravity="left"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:text="Add accounts to update your profile"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnLinkedin
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Linkedin account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnGoogleplus
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Google account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnFacebook
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Facebook account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnTwitter
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Twitter account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnFlickr
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Flickr account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnFoursquare
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Foursquare account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnInstagram
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Instagram account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnPinterest
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Pinterest account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnQuora
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Quora account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnTumblr
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Tumblr account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnDropbox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Dropbox account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnVine
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Vine account" />
+
+                    <in.championswimmer.libsocialbuttons.buttons.BtnYoutube
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="Add Youtube account" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
